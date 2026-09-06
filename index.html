@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Auto Clip</title>
+<style>
+  :root {
+    --fond: #ffffff; --texte: #1a1a1f; --attenue: #5c5c68;
+    --bord: #e4e4ea; --accent: #1f6feb; --carte: #f7f7f9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fond: #131318; --texte: #ececf1; --attenue: #9a9aa6;
+      --bord: #2a2a33; --accent: #6ea8ff; --carte: #1c1c23;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--fond); color: var(--texte);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 64px 24px 96px; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 8px; letter-spacing: -0.02em; }
+  h2 { font-size: 1.15rem; margin: 40px 0 12px; letter-spacing: -0.01em; }
+  .accroche { color: var(--attenue); font-size: 1.05rem; margin: 0 0 40px; }
+  ol { padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  a { color: var(--accent); }
+  .carte {
+    background: var(--carte); border: 1px solid var(--bord);
+    border-radius: 10px; padding: 18px 20px; margin: 24px 0;
+  }
+  .carte p:first-child { margin-top: 0; }
+  .carte p:last-child { margin-bottom: 0; }
+  footer {
+    margin-top: 56px; padding-top: 24px; border-top: 1px solid var(--bord);
+    color: var(--attenue); font-size: 0.9rem;
+  }
+  footer a { margin-right: 18px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>Auto Clip</h1>
+  <p class="accroche">Un outil personnel qui découpe des extraits de vidéos longues
+  en clips verticaux, puis les publie sur mes propres comptes YouTube, TikTok et
+  Instagram.</p>
+
+  <h2>Ce que fait l'application</h2>
+  <ol>
+    <li>Elle télécharge une vidéo ou un clip que je lui indique.</li>
+    <li>Elle en transcrit la bande son et repère les passages les plus marquants.</li>
+    <li>Elle découpe, recadre au format vertical et incruste des sous-titres.</li>
+    <li>Après ma validation explicite, elle publie le clip sur mes comptes.</li>
+  </ol>
+
+  <h2>Qui l'utilise</h2>
+  <p>Moi seul. Auto Clip s'exécute sur mon ordinateur et ne publie que sur les
+  comptes que j'ai moi-même connectés. Ce n'est pas un service en ligne : il n'y a
+  ni inscription, ni compte utilisateur, ni serveur qui hébergerait des données de
+  tiers.</p>
+
+  <div class="carte">
+    <p><strong>Accès demandé à Google.</strong> L'application demande une seule
+    autorisation, <code>youtube.upload</code>, qui permet d'envoyer une vidéo sur ma
+    chaîne. Elle ne lit ni mes vidéos existantes, ni mes statistiques, ni mes
+    commentaires, ni aucune donnée de mon compte Google.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:autoclip79@gmail.com">autoclip79@gmail.com</a></p>
+
+  <footer>
+    <a href="./confidentialite.html">Règles de confidentialité</a>
+    <a href="./conditions.html">Conditions d'utilisation</a>
+  </footer>
+
+</div>
+</body>
+</html>
